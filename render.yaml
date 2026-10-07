@@ -1,0 +1,13 @@
+# Render Blueprint: one Docker web service (API + dashboard).
+# Add DATABASE_URL (e.g. a free Neon Postgres) in the Render dashboard to keep trade history across restarts.
+services:
+  - type: web
+    name: arbitrage-simulator
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: STARTING_CAPITAL
+        value: "1000000"
+      - key: DATABASE_URL
+        sync: false
