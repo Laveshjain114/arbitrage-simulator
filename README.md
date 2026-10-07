@@ -2,6 +2,8 @@
 
 **Real-time multi-broker NSE ↔ BSE arbitrage detection and execution, fully simulated end to end**
 
+🔗 **Live demo:** https://arbitrage-simulator.onrender.com (free instance: the first load can take ~1 minute to wake up)
+
 > ⚠️ **100% SIMULATED.** The market feed, the broker accounts, the orders and the money are all simulated in-process.
 > The project contains no real broker or exchange integration and needs no credentials.
 > It is an engineering portfolio project, not a trading system.
